@@ -1,16 +1,7 @@
-meme_dict = {
-            "КРИНЖ": "Что-то очень странное или стыдное",
-            "ЛОЛ": "Что-то очень смешное"
-            "РОФЛ": "Шутка",
-            "ЩИЩ": "Одобрение или восторг"
-            "КРИПОВЫЙ": "Страшный, пугающий",
-            "АГРИТЬСЯ": "Злиться"
-            }
-            word = input("Введите непонятное слово (большими буквами!): ")
-            
-
-if word in meme_dict.keys():
-    # Что делать, если слово нашлось?
-else:
-    # Что делать, если слово не нашлось?
-    
+from random import choice
+letters="+-/*!&$#?=@abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+ques=input("Длина пароля?"+ "\n")
+answer= []
+for letter in range(int(ques)):
+    answer.append(choice(letters))
+    print(*answer)
